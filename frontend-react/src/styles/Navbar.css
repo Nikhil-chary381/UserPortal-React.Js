@@ -1,0 +1,87 @@
+
+.navbar {
+  transition: all 0.3s ease-in-out;
+  padding: 1rem 0;
+}
+
+.navbar-scrolled {
+  padding: 0.5rem 0;
+}
+
+/* Dropdown animation */
+.animate {
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+
+.slideIn {
+  animation-name: slideIn;
+}
+
+body {
+  padding-top: 76px;
+}
+
+/* Hover underline effect for links */
+.nav-link {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 2px;
+  right: 0;
+  background: #000;
+  transition: width 0.2s ease;
+}
+
+.nav-link:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.login-btn,
+.register-btn {
+  background: #ffffff;
+  color: white !important;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  border: 2px solid #000000;
+  border-radius: 30px;
+  padding: 0.6rem 1.2rem;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
+.login-btn:hover,
+.register-btn:hover {
+  background:lightslategray;
+  color: #ffffff !important;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Active (pressed) effect */
+.login-btn:active,
+.register-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+}
+

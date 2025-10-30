@@ -1,0 +1,120 @@
+
+.edit-profile-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+.edit-profile-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2C3E50;
+}
+
+.edit-profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #2C3E50;
+  font-weight: 500;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.2s ease;
+}
+
+.form-control:focus {
+  border-color: #3498DB;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+  outline: none;
+}
+
+.avatar-upload {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.avatar-preview {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  background: linear-gradient(45deg, #2C3E50, #3498DB);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.avatar-preview:hover {
+  transform: scale(1.05);
+}
+
+.upload-btn {
+  background: none;
+  border: 1px dashed #3498DB;
+  color: #3498DB;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.upload-btn:hover {
+  background: #3498DB;
+  color: white;
+}
+
+.save-btn {
+  height: 3rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: linear-gradient(90deg, #2C3E50, #3498DB);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.save-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+.cancel-btn {
+  height: 3rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: white;
+  color: #666;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 1rem;
+  transition: all 0.2s ease;
+}
+
+.cancel-btn:hover {
+  background: #f8f9fa;
+  border-color: #666;
+  color: #2C3E50;
+}

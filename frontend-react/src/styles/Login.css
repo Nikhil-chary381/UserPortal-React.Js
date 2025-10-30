@@ -1,0 +1,83 @@
+/* Login.css */
+.login-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2C3E50;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-floating {
+  position: relative;
+}
+
+.form-floating input {
+  height: 3.5rem;
+  padding: 1rem 0.75rem;
+}
+
+.form-floating label {
+  padding: 1rem 0.75rem;
+}
+
+.login-btn {
+  height: 3rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: linear-gradient(90deg, #2C3E50, #3498DB);
+  border: none;
+  transition: transform 0.2s ease;
+}
+
+.login-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+.login-footer {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #666;
+}
+
+.login-footer a {
+  color: #3498DB;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.login-footer a:hover {
+  color: #2C3E50;
+}
+
+.alert {
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

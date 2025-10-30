@@ -1,0 +1,89 @@
+
+.register-container {
+  max-width: 450px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+.register-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2C3E50;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-floating {
+  position: relative;
+}
+
+.form-floating input {
+  height: 3.5rem;
+  padding: 1rem 0.75rem;
+}
+
+.form-floating label {
+  padding: 1rem 0.75rem;
+}
+
+.register-btn {
+  height: 3rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: linear-gradient(90deg, #2C3E50, #3498DB);
+  border: none;
+  transition: transform 0.2s ease;
+}
+
+.register-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+.register-footer {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #666;
+}
+
+.register-footer a {
+  color: #3498DB;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.register-footer a:hover {
+  color: #2C3E50;
+}
+
+.form-requirements {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: -0.5rem;
+}
+
+.password-strength {
+  height: 4px;
+  background: #eee;
+  margin-top: 0.5rem;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.password-strength-bar {
+  height: 100%;
+  width: 0;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.strength-weak { background-color: #e74c3c; width: 33%; }
+.strength-medium { background-color: #f1c40f; width: 66%; }
+.strength-strong { background-color: #2ecc71; width: 100%; }
